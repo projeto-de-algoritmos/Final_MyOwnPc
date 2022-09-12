@@ -64,24 +64,51 @@ class CustomToolBar extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: size.width * 0.2),
-                Material(
-                  color: Colors.transparent,
-                  child: IconButton(
-                    onPressed: () {
-                      showBottomSheet(
-                        context: context,
-                        builder: ((context) => const CartSheet()),
-                      );
-                    },
-                    icon: Icon(
-                      Icons.shopping_cart,
-                      size: size.height * 0.03,
-                      color: const Color(0XFF6236FF),
+                Stack(
+                  children: [
+                    Material(
+                      color: Colors.transparent,
+                      child: IconButton(
+                        onPressed: () {
+                          showBottomSheet(
+                            context: context,
+                            builder: ((context) => const CartSheet()),
+                          );
+                        },
+                        icon: Icon(
+                          Icons.shopping_cart,
+                          size: size.height * 0.03,
+                          color: const Color(0XFF6236FF),
+                        ),
+                        splashColor: SharedPrefs.backgroundColor,
+                        highlightColor: SharedPrefs.backgroundColor,
+                        splashRadius: 25,
+                      ),
                     ),
-                    splashColor: SharedPrefs.backgroundColor,
-                    highlightColor: SharedPrefs.backgroundColor,
-                    splashRadius: 25,
-                  ),
+                    Positioned(
+                      bottom: 4,
+                      right: 2,
+                      child: Container(
+                        padding: EdgeInsets.all(1),
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        constraints: const BoxConstraints(
+                          minWidth: 15,
+                          minHeight: 15,
+                        ),
+                        child: Text(
+                          SharedPrefs.itemsCartCount.toString(),
+                          style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 11,
+                              fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ],
             ),

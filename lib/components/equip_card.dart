@@ -66,7 +66,9 @@ class ProductCard extends StatelessWidget {
                 height: size.height * 0.02,
               ),
               MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  SharedPrefs.itemsCartCount++;
+                },
                 color: SharedPrefs.primaryPurple,
                 height: size.height * 0.03,
                 minWidth: size.width * 0.5,
