@@ -1,0 +1,16 @@
+Product Types        Prioridade
+-------------------------
+0: Monitor              X
+1: Mouse                X
+2: Teclado              X
+3: Fone                 X
+4: Placa Mãe            X
+5: Placa de Vídeo       X
+6: RAM                  X
+7: SSD                  X
+8: Mousepad             X
+
+O weigth vai ser relacionado a qualidade do produto
+quanto maior o quality, menor o produro
+
+10 lojas - id de 1 a 10

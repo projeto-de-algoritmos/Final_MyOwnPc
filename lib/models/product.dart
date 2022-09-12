@@ -1,13 +1,13 @@
-import 'package:my_own_pc/models/store.dart';
-
 class Product {
   final int id;
   final String name;
-  final String description;
+  final int priority;
   final double value;
-  final Store store;
+  final int idStore;
   final int type;
+  final String imageAsset;
+  final int quality;
 
-  Product(
-      this.id, this.name, this.description, this.value, this.store, this.type);
+  Product(this.id, this.name, this.priority, this.value, this.idStore,
+      this.type, this.imageAsset, this.quality);
 }
