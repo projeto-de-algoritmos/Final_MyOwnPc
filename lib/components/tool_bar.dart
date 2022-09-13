@@ -85,26 +85,29 @@ class CustomToolBar extends StatelessWidget {
                         splashRadius: 25,
                       ),
                     ),
-                    Positioned(
-                      bottom: 4,
-                      right: 2,
-                      child: Container(
-                        padding: EdgeInsets.all(1),
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        constraints: const BoxConstraints(
-                          minWidth: 15,
-                          minHeight: 15,
-                        ),
-                        child: Text(
-                          SharedPrefs.itemsCartCount.toString(),
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
+                    ValueListenableBuilder(
+                      valueListenable: SharedPrefs.itemsCartCount,
+                      builder: (context, value, child) => Positioned(
+                        bottom: 4,
+                        right: 2,
+                        child: Container(
+                          padding: EdgeInsets.all(1),
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          constraints: const BoxConstraints(
+                            minWidth: 15,
+                            minHeight: 15,
+                          ),
+                          child: Text(
+                            SharedPrefs.itemsCartCount.value.toString(),
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                     )
