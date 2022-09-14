@@ -17,8 +17,8 @@ class ResultController {
     if (idStore == 0) {
       return [
         Container(
-          margin: EdgeInsets.only(top: 150),
-          child: Text(
+          margin: const EdgeInsets.only(top: 150),
+          child: const Text(
             "Todas as rotas são calculadas tendo início na sede central do Correios:",
             textAlign: TextAlign.center,
             style: TextStyle(fontWeight: FontWeight.bold),

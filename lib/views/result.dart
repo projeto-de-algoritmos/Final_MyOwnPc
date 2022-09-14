@@ -21,7 +21,7 @@ class _ResultPageState extends State<ResultPage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
-        child: Container(
+        child: SizedBox(
           width: size.width,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,7 +36,7 @@ class _ResultPageState extends State<ResultPage> {
                   horizontal: size.width * 0.05,
                   vertical: size.height * 0.02,
                 ),
-                padding: EdgeInsets.all(15),
+                padding: const EdgeInsets.all(15),
                 height: size.height * 0.12,
                 width: size.width * 0.8,
                 decoration: BoxDecoration(
@@ -46,7 +46,7 @@ class _ResultPageState extends State<ResultPage> {
                     BoxShadow(
                         blurRadius: 4,
                         spreadRadius: 0,
-                        offset: Offset(0, 4),
+                        offset: const Offset(0, 4),
                         color: Colors.black.withOpacity(0.25))
                   ],
                 ),
@@ -71,68 +71,66 @@ class _ResultPageState extends State<ResultPage> {
                   ],
                 ),
               ),
-              Container(
-                child: CarouselSlider(
-                  options: CarouselOptions(
-                      height: size.height * 0.6,
-                      initialPage: 0,
-                      autoPlay: true,
-                      viewportFraction: 0.9,
-                      enableInfiniteScroll: false),
-                  items: widget.storesRoute.map((i) {
-                    return Builder(
-                      builder: (BuildContext context) {
-                        List<Store> stores = SharedPrefs.stores;
-                        return Container(
-                          height: size.height * 0.55,
-                          margin: EdgeInsets.symmetric(horizontal: 15),
-                          width: size.width,
-                          child: Column(children: [
-                            Container(
-                              height: size.height * 0.15,
-                              width: size.height * 0.13,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        "assets/images/${stores[i].image}"),
-                                    fit: BoxFit.fill),
-                              ),
+              CarouselSlider(
+                options: CarouselOptions(
+                    height: size.height * 0.6,
+                    initialPage: 0,
+                    autoPlay: true,
+                    viewportFraction: 0.9,
+                    enableInfiniteScroll: false),
+                items: widget.storesRoute.map((i) {
+                  return Builder(
+                    builder: (BuildContext context) {
+                      List<Store> stores = SharedPrefs.stores;
+                      return Container(
+                        height: size.height * 0.55,
+                        margin: const EdgeInsets.symmetric(horizontal: 15),
+                        width: size.width,
+                        child: Column(children: [
+                          Container(
+                            height: size.height * 0.15,
+                            width: size.height * 0.13,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      "assets/images/${stores[i].image}"),
+                                  fit: BoxFit.fill),
                             ),
-                            SizedBox(
-                              height: size.height * 0.02,
+                          ),
+                          SizedBox(
+                            height: size.height * 0.02,
+                          ),
+                          Text(
+                            stores[i].name,
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
-                            Text(
-                              stores[i].name,
-                              style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            i != 0
-                                ? Row(
-                                    children: [
-                                      Container(
-                                        margin: EdgeInsets.only(
-                                            top: size.height * 0.02),
-                                        child: Text(
-                                          "Produtos para retirar nessa loja:",
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                : SizedBox(),
-                            Container(
-                                height: size.height * 0.35,
-                                width: size.width * 0.8,
-                                child: ListView(
-                                  children: controller.productsFromStore(i),
-                                ))
-                          ]),
-                        );
-                      },
-                    );
-                  }).toList(),
-                ),
+                          ),
+                          i != 0
+                              ? Row(
+                                  children: [
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          top: size.height * 0.02),
+                                      child: const Text(
+                                        "Produtos para retirar nessa loja:",
+                                      ),
+                                    )
+                                  ],
+                                )
+                              : const SizedBox(),
+                          SizedBox(
+                              height: size.height * 0.35,
+                              width: size.width * 0.8,
+                              child: ListView(
+                                children: controller.productsFromStore(i),
+                              ))
+                        ]),
+                      );
+                    },
+                  );
+                }).toList(),
               ),
               MaterialButton(
                 onPressed: () {
@@ -140,7 +138,7 @@ class _ResultPageState extends State<ResultPage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) => ProductsList()),
+                      builder: ((context) => const ProductsList()),
                     ),
                   );
                 },

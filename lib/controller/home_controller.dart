@@ -44,7 +44,7 @@ class HomeController {
     if (homeList.isEmpty) {
       return [
         Center(
-            child: Container(
+            child: SizedBox(
           height: 500,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,7 +97,6 @@ class HomeController {
 
     List<int> storesRoute = [0];
     int actualStore = 0;
-    int nextStore = 0;
 
     while (missingStores.isNotEmpty) {
       int nextStore = grafo.dijkstra(actualStore, missingStores);
@@ -106,6 +105,7 @@ class HomeController {
       actualStore = nextStore;
     }
 
+    // ignore: avoid_print
     print(storesRoute);
     return storesRoute;
   }

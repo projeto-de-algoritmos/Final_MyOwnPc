@@ -19,7 +19,7 @@ class GetProductCard extends StatelessWidget {
           BoxShadow(
             blurRadius: 4,
             spreadRadius: 0,
-            offset: Offset(0, 4),
+            offset: const Offset(0, 4),
             color: Colors.black.withOpacity(0.25),
           )
         ],
@@ -37,11 +37,11 @@ class GetProductCard extends StatelessWidget {
             ),
           ),
           SizedBox(width: size.width * 0.05),
-          Container(
+          SizedBox(
             width: size.width * 0.55,
             child: Text(
               product.name,
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
               softWrap: true,
               overflow: TextOverflow.clip,
             ),
