@@ -55,14 +55,14 @@ class _ResultPageState extends State<ResultPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Preço final: R\$ 7890,00",
+                      "Preço final: R\$ ${controller.totalPrice()}",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: size.height * 0.02),
                     ),
                     Text(
-                      "Qualidade: Ótimo",
+                      controller.quality(),
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,

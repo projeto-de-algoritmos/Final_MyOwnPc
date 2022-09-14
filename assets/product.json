@@ -11,13 +11,13 @@
     },
     {
         "id": 2,
-        "name": "Monitor Samsung LED 23.5 Widescreen Curvo",
+        "name": "Monitor AOC 21,5",
         "priority": 3,
-        "value": 881.99,
-        "store": 3,
+        "value": 599.00,
+        "store": 4,
         "type": 0,
-        "imageAsset": "assets/images/monitor_samsung.jpg",
-        "quality": 2
+        "imageAsset": "assets/images/monitor_aoc_21.5.jpg",
+        "quality": 4
     },
     {
         "id": 3,
@@ -31,19 +31,19 @@
     },
     {
         "id": 4,
-        "name": "Monitor AOC 21,5",
+        "name": "Monitor Samsung LED 23.5 Widescreen Curvo",
         "priority": 3,
-        "value": 599.00,
-        "store": 4,
+        "value": 881.99,
+        "store": 3,
         "type": 0,
-        "imageAsset": "assets/images/monitor_aoc_21.5.jpg",
-        "quality": 4
+        "imageAsset": "assets/images/monitor_samsung.jpg",
+        "quality": 2
     },
     {
         "id": 5,
         "name": "Monitor Curvo WQHD 34 Dell",
         "priority": 3,
-        "value": 881.99,
+        "value": 4444.00,
         "store": 5,
         "type": 0,
         "imageAsset": "assets/images/monitor_dell.jpg",
@@ -51,6 +51,16 @@
     },
     {
         "id": 6,
+        "name": "Mouse Classic Box Óptico Full Black USB - MO300",
+        "priority": 2,
+        "value": 8.50,
+        "store": 3,
+        "type": 1,
+        "imageAsset": "assets/images/mouse_optico.jpeg",
+        "quality": 5
+    },
+    {
+        "id": 7,
         "name": "Mouse Gamer Redragon Cobra, Chroma RGB, 12400DPI, 7 Botões, Preto - M711 V2",
         "priority": 2,
         "value": 116.99,
@@ -60,16 +70,6 @@
         "quality": 4
     },
     {
-        "id": 7,
-        "name": "Mouse Gamer Razer Viper Mini Chroma",
-        "priority": 2,
-        "value": 134.00,
-        "store": 3,
-        "type": 1,
-        "imageAsset": "assets/images/mouse_razer.jpeg",
-        "quality": 3
-    },
-    {
         "id": 8,
         "name": "DELUX Mouse ergonômico",
         "priority": 2,
@@ -77,10 +77,20 @@
         "store": 1,
         "type": 1,
         "imageAsset": "assets/images/mouse_delux.jpg",
-        "quality": 5
+        "quality": 3
     },
     {
         "id": 9,
+        "name": "Mouse Gamer Razer Viper Mini Chroma",
+        "priority": 2,
+        "value": 134.00,
+        "store": 3,
+        "type": 1,
+        "imageAsset": "assets/images/mouse_razer.jpeg",
+        "quality": 2
+    },
+    {
+        "id": 10,
         "name": "Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT com Tecnologia LIGHTSPEED",
         "priority": 2,
         "value": 719.91,
@@ -90,27 +100,7 @@
         "quality": 1
     },
     {
-        "id": 10,
-        "name": "Teclado Mecânico Gamer Redragon Kumara, RGB, Switch Outemu Brown, PT - K552RGB-1 (PT-BROWN)",
-        "priority": 2,
-        "value": 209.99,
-        "store": 3,
-        "type": 2,
-        "imageAsset": "assets/images/teclado_red_mec.jpeg",
-        "quality": 4
-    },
-    {
         "id": 11,
-        "name": "Teclado Gamer Cooler Master MK110 RGB",
-        "priority": 2,
-        "value": 232.40,
-        "store": 4,
-        "type": 2,
-        "imageAsset": "assets/images/teclado_cooler.jpeg",
-        "quality": 3
-    },
-    {
-        "id": 12,
         "name": "Teclado Multilaser Slim com Fio USB Teclas Silenciosas Preto - TC213",
         "priority": 2,
         "value": 27.90,
@@ -120,7 +110,27 @@
         "quality": 5
     },
     {
+        "id": 12,
+        "name": "Teclado Mecânico Gamer Redragon Kumara, RGB, Switch Outemu Brown, PT - K552RGB-1 (PT-BROWN)",
+        "priority": 2,
+        "value": 209.99,
+        "store": 3,
+        "type": 2,
+        "imageAsset": "assets/images/teclado_red_mec.jpeg",
+        "quality": 4
+    },
+    {
         "id": 13,
+        "name": "Teclado Gamer Cooler Master MK110 RGB",
+        "priority": 2,
+        "value": 232.40,
+        "store": 4,
+        "type": 2,
+        "imageAsset": "assets/images/teclado_cooler.jpeg",
+        "quality": 3
+    },
+    {
+        "id": 14,
         "name": "Teclado Mecânico sem fio Logitech POP Keys",
         "priority": 2,
         "value": 599.90,
@@ -130,23 +140,13 @@
         "quality": 2
     },
     {
-        "id": 14,
+        "id": 15,
         "name": "Teclado Gamer Mecânico Alienware Low Profile RGB AW510K",
         "priority": 2,
         "value": 1159.99,
         "store": 5,
         "type": 2,
         "imageAsset": "assets/images/teclado_alienware.jpg",
-        "quality": 1
-    },
-    {
-        "id": 15,
-        "name": "Headset Gamer JBL Quantum 800, Bluetooth, RGB, Preto",
-        "priority": 2,
-        "value": 1109.99,
-        "store": 5,
-        "type": 3,
-        "imageAsset": "assets/images/jbl_headset.jpeg",
         "quality": 1
     },
     {
@@ -161,16 +161,6 @@
     },
     {
         "id": 17,
-        "name": "Headset Gaming HyperX Cloud Alpha",
-        "priority": 2,
-        "value": 449.98,
-        "store": 1,
-        "type": 3,
-        "imageAsset": "assets/images/headset_hyperx.jpg",
-        "quality": 3
-    },
-    {
-        "id": 18,
         "name": "Headset Gamer Redragon Zeus USB Preto RGB - H510-RGB",
         "priority": 2,
         "value": 320.00,
@@ -178,6 +168,16 @@
         "type": 3,
         "imageAsset": "assets/images/headset_red.jpeg",
         "quality": 4
+    },
+    {
+        "id": 18,
+        "name": "Headset Gaming HyperX Cloud Alpha",
+        "priority": 2,
+        "value": 449.98,
+        "store": 1,
+        "type": 3,
+        "imageAsset": "assets/images/headset_hyperx.jpg",
+        "quality": 3
     },
     {
         "id": 19,
@@ -191,13 +191,13 @@
     },
     {
         "id": 20,
-        "name": "Placa Mãe GA-A320M-S2H Amd Am4 Ddr4 - Gigabyte",
-        "priority": 1,
-        "value": 413.99,
-        "store": 2,
-        "type": 4,
-        "imageAsset": "assets/images/placa_ga_a320.jpg",
-        "quality": 4
+        "name": "Headset Gamer JBL Quantum 800, Bluetooth, RGB, Preto",
+        "priority": 2,
+        "value": 1109.99,
+        "store": 5,
+        "type": 3,
+        "imageAsset": "assets/images/jbl_headset.jpeg",
+        "quality": 1
     },
     {
         "id": 21,
@@ -211,13 +211,13 @@
     },
     {
         "id": 22,
-        "name": "PLACA MAE ASUS TUF GAMING X570-PLUS/BR DDR4 SOCKET AM4 CHIPSET AMD X570",
+        "name": "Placa Mãe GA-A320M-S2H Amd Am4 Ddr4 - Gigabyte",
         "priority": 1,
-        "value": 1559.99,
-        "store": 3,
+        "value": 413.99,
+        "store": 2,
         "type": 4,
-        "imageAsset": "assets/images/placa_tuf.jpg",
-        "quality": 1
+        "imageAsset": "assets/images/placa_ga_a320.jpg",
+        "quality": 4
     },
     {
         "id": 23,
@@ -241,33 +241,33 @@
     },
     {
         "id": 25,
-        "name": "Placa de Vídeo GALAX - GeForce RTX 3070",
-        "priority": 3,
-        "value": 3999.99,
-        "store": 5,
-        "type": 1,
-        "imageAsset": "assets/images/placa_rtx_3070.jpg",
+        "name": "PLACA MAE ASUS TUF GAMING X570-PLUS/BR DDR4 SOCKET AM4 CHIPSET AMD X570",
+        "priority": 1,
+        "value": 1559.99,
+        "store": 3,
+        "type": 4,
+        "imageAsset": "assets/images/placa_tuf.jpg",
         "quality": 1
     },
     {
         "id": 26,
+        "name": "Placa De Vídeo Nvidia Gtx 650 2gb 128gb",
+        "priority": 3,
+        "value": 600.99,
+        "store": 5,
+        "type": 5,
+        "imageAsset": "assets/images/placa_gtx_650.jpg",
+        "quality": 5
+    },
+    {
+        "id": 27,
         "name": "Placa De Vídeo Nvidia Geforce Gtx 1050 2gb GDDR5 Gigabyte GV-N1050G1 Gaming 2g",
         "priority": 3,
         "value": 629.99,
         "store": 5,
-        "type": 4,
+        "type": 5,
         "imageAsset": "assets/images/placa_gtx_1050.jpeg",
         "quality": 4
-    },
-    {
-        "id": 27,
-        "name": "PLACA DE VIDEO GIGABYTE GEFORCE RTX 2060 12GB GDDR6",
-        "priority": 3,
-        "value": 2799.99,
-        "store": 2,
-        "type": 5,
-        "imageAsset": "assets/images/placa_rtx_2060.jpg",
-        "quality": 2
     },
     {
         "id": 28,
@@ -281,16 +281,26 @@
     },
     {
         "id": 29,
-        "name": "Placa De Vídeo Nvidia Gtx 650 2gb 128gb",
+        "name": "PLACA DE VIDEO GIGABYTE GEFORCE RTX 2060 12GB GDDR6",
         "priority": 3,
-        "value": 600.99,
-        "store": 5,
+        "value": 2799.99,
+        "store": 2,
         "type": 5,
-        "imageAsset": "assets/images/placa_gtx_650.jpg",
-        "quality": 5
+        "imageAsset": "assets/images/placa_rtx_2060.jpg",
+        "quality": 2
     },
     {
         "id": 30,
+        "name": "Placa de Vídeo GALAX - GeForce RTX 3070",
+        "priority": 3,
+        "value": 3999.99,
+        "store": 5,
+        "type": 5,
+        "imageAsset": "assets/images/placa_rtx_3070.jpg",
+        "quality": 1
+    },
+    {
+        "id": 31,
         "name": "MEMORIA TEAM GROUP T-FORCE VULCAN PICHAU",
         "priority": 1,
         "value": 229.99,
@@ -300,7 +310,17 @@
         "quality": 5
     },
     {
-        "id": 31,
+        "id": 32,
+        "name": "Memória RAM Kingston HyperX Fury",
+        "priority": 1,
+        "value": 215.99,
+        "store": 4,
+        "type": 6,
+        "imageAsset": "assets/images/ram_kingston.jpg",
+        "quality": 4
+    },
+    {
+        "id": 33,
         "name": "Memória DDR4 XPG Spectrix D60",
         "priority": 1,
         "value": 349.99,
@@ -310,7 +330,7 @@
         "quality": 3
     },
     {
-        "id": 32,
+        "id": 34,
         "name": "Memória Corsair Vengeance LPX, 16GB",
         "priority": 1,
         "value": 445.00,
@@ -320,7 +340,7 @@
         "quality": 2
     },
     {
-        "id": 33,
+        "id": 35,
         "name": "Memória DDR4 XPG Gammix D45, 16GB",
         "priority": 1,
         "value": 599.99,
@@ -330,13 +350,103 @@
         "quality": 1
     },
     {
-        "id": 34,
-        "name": "Memória RAM Kingston HyperX Fury",
+        "id": 36,
+        "name": "SSD 240GB Kingston A400, SATA",
         "priority": 1,
-        "value": 215.99,
-        "store": 4,
-        "type": 6,
-        "imageAsset": "assets/images/ram_kingston.jpg",
+        "value": 149.99,
+        "store": 2,
+        "type": 7,
+        "imageAsset": "assets/images/ssd_kingston.jpeg",
+        "quality": 5
+    },
+    {
+        "id": 37,
+        "name": "SSD 480GB Kingston A400, SATA",
+        "priority": 1,
+        "value": 247.99,
+        "store": 2,
+        "type": 7,
+        "imageAsset": "assets/images/ssd_kingston.jpeg",
         "quality": 4
+    },
+    {
+        "id": 38,
+        "name": "SSD Kingston SNVS 500GB",
+        "priority": 1,
+        "value": 288.99,
+        "store": 2,
+        "type": 7,
+        "imageAsset": "assets/images/ssd_fino.jpg",
+        "quality": 3
+    },
+    {
+        "id": 39,
+        "name": "SSD 960GB Kingston A400, SATA",
+        "priority": 1,
+        "value": 599.99,
+        "store": 2,
+        "type": 7,
+        "imageAsset": "assets/images/ssd_kingston.jpeg",
+        "quality": 2
+    },
+    {
+        "id": 40,
+        "name": "Dell 3.84TB SSD SAS Uso Combinado 12Gbit/s ",
+        "priority": 1,
+        "value": 87598.99,
+        "store": 2,
+        "type": 7,
+        "imageAsset": "assets/images/ssd_dell.jpg",
+        "quality": 1
+    },
+    {
+        "id": 41,
+        "name": "Mousepad Gamer Speed Borda Costurada",
+        "priority": 1,
+        "value": 28.50,
+        "store": 2,
+        "type": 8,
+        "imageAsset": "assets/images/mousepad_speed.jpeg",
+        "quality": 5
+    },
+    {
+        "id": 42,
+        "name": "Mousepad Gamer Husky Black Avalanche, Speed, Extra Grande",
+        "priority": 1,
+        "value": 49.99,
+        "store": 2,
+        "type": 8,
+        "imageAsset": "assets/images/mousepad_husky.jpeg",
+        "quality": 4
+    },
+    {
+        "id": 43,
+        "name": "Mouse Pad Gamer Iluminado led Rgb Grande 80 cm por 30 com Mousepad gamer Led com em volta superficie speed para jogos",
+        "priority": 1,
+        "value": 70.00,
+        "store": 2,
+        "type": 8,
+        "imageAsset": "assets/images/mousepad_iluminado.jpg",
+        "quality": 3
+    },
+    {
+        "id": 44,
+        "name": "Mousepad Gamer Fallen Dota2 Eco Sagan",
+        "priority": 1,
+        "value": 109.99,
+        "store": 2,
+        "type": 8,
+        "imageAsset": "assets/images/mousepad_fallen.jpg",
+        "quality": 2
+    },
+    {
+        "id": 45,
+        "name": "MOUSEPAD GAMER REDRAGON NEPTUNE",
+        "priority": 1,
+        "value": 175.89,
+        "store": 2,
+        "type": 8,
+        "imageAsset": "assets/images/mousepad_red.jpg",
+        "quality": 1
     }
 ]
