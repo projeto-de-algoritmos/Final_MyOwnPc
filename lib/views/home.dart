@@ -17,6 +17,7 @@ class _ProductsListState extends State<ProductsList> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    if (controller.grafo.grafo.isEmpty) controller.grafo.buildGraph();
     return Scaffold(
       backgroundColor: SharedPrefs.backgroundColor,
       appBar: PreferredSize(
@@ -26,36 +27,41 @@ class _ProductsListState extends State<ProductsList> {
       body: Stack(children: [
         SingleChildScrollView(
           child: FutureBuilder(
-            future: controller.returnProductsList(),
+            future: controller.transformProductList(),
             builder: ((context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      padding: EdgeInsets.only(left: size.width * 0.05),
-                      margin:
-                          EdgeInsets.symmetric(vertical: size.height * 0.02),
-                      child: Text(
-                        "Produtos",
-                        style: TextStyle(
-                            color: SharedPrefs.primaryPurple,
-                            fontWeight: FontWeight.bold,
-                            fontSize: size.height * 0.02),
+                return ValueListenableBuilder(
+                  valueListenable: SharedPrefs.itemsCartCount,
+                  builder: (context, value, child) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(left: size.width * 0.05),
+                        margin:
+                            EdgeInsets.symmetric(vertical: size.height * 0.02),
+                        child: Text(
+                          "Produtos",
+                          style: TextStyle(
+                              color: SharedPrefs.primaryPurple,
+                              fontWeight: FontWeight.bold,
+                              fontSize: size.height * 0.02),
+                        ),
                       ),
-                    ),
-                    ...(snapshot.data as List<Widget>),
-                    SizedBox(height: size.height * 0.15)
-                  ],
+                      ...(controller.createHomeList()),
+                      SizedBox(height: size.height * 0.15)
+                    ],
+                  ),
                 );
               }
               return const CircularProgressIndicator();
             }),
           ),
         ),
-        const Align(
+        Align(
           alignment: Alignment.bottomCenter,
-          child: CustomToolBar(),
+          child: CustomToolBar(
+            controller: controller,
+          ),
         )
       ]),
     );

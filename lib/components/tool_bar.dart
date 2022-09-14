@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:my_own_pc/controller/home_controller.dart';
 import 'package:my_own_pc/shared/variables.dart';
 import 'package:my_own_pc/views/cart_sheet.dart';
 import 'package:my_own_pc/views/config_sheet.dart';
 
 class CustomToolBar extends StatelessWidget {
-  const CustomToolBar({Key? key}) : super(key: key);
+  const CustomToolBar({Key? key, required this.controller}) : super(key: key);
+
+  final HomeController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,10 @@ class CustomToolBar extends StatelessWidget {
               height: size.height * 0.07,
               color: SharedPrefs.greenButton,
               shape: const CircleBorder(),
-              onPressed: () {},
+              onPressed: () {
+                print(SharedPrefs.productsStores);
+                controller.createRoute();
+              },
               highlightColor: Colors.transparent,
               child: const Icon(
                 Icons.check,
@@ -85,26 +91,29 @@ class CustomToolBar extends StatelessWidget {
                         splashRadius: 25,
                       ),
                     ),
-                    Positioned(
-                      bottom: 4,
-                      right: 2,
-                      child: Container(
-                        padding: EdgeInsets.all(1),
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        constraints: const BoxConstraints(
-                          minWidth: 15,
-                          minHeight: 15,
-                        ),
-                        child: Text(
-                          SharedPrefs.itemsCartCount.toString(),
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 11,
-                              fontWeight: FontWeight.bold),
-                          textAlign: TextAlign.center,
+                    ValueListenableBuilder(
+                      valueListenable: SharedPrefs.itemsCartCount,
+                      builder: (context, value, child) => Positioned(
+                        bottom: 4,
+                        right: 2,
+                        child: Container(
+                          padding: EdgeInsets.all(1),
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          constraints: const BoxConstraints(
+                            minWidth: 15,
+                            minHeight: 15,
+                          ),
+                          child: Text(
+                            SharedPrefs.itemsCartCount.value.toString(),
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 11,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
                         ),
                       ),
                     )
