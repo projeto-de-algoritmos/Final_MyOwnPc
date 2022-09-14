@@ -76,7 +76,7 @@ class Grafo {
         if (!vertexSeted[v]! &&
             edgeWeight != -1 &&
             distance[minVertex] != 100000 &&
-            distance[minVertex]! + edgeWeight < distance[v]!) {
+            distance[minVertex]! + edgeWeight <= distance[v]!) {
           distance[v] = distance[minVertex]! + edgeWeight;
         }
       }

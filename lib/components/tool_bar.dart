@@ -3,6 +3,7 @@ import 'package:my_own_pc/controller/home_controller.dart';
 import 'package:my_own_pc/shared/variables.dart';
 import 'package:my_own_pc/views/cart_sheet.dart';
 import 'package:my_own_pc/views/config_sheet.dart';
+import 'package:my_own_pc/views/result.dart';
 
 class CustomToolBar extends StatelessWidget {
   const CustomToolBar({Key? key, required this.controller}) : super(key: key);
@@ -35,7 +36,15 @@ class CustomToolBar extends StatelessWidget {
               shape: const CircleBorder(),
               onPressed: () {
                 print(SharedPrefs.productsStores);
-                controller.createRoute();
+                List<int> route = controller.createRoute();
+                if (SharedPrefs.cartItems.length > 0) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: ((context) => ResultPage(storesRoute: route)),
+                    ),
+                  );
+                }
               },
               highlightColor: Colors.transparent,
               child: const Icon(

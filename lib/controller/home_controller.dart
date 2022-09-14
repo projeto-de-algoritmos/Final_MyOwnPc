@@ -89,7 +89,7 @@ class HomeController {
     return cartList;
   }
 
-  void createRoute() {
+  List<int> createRoute() {
     List<int> missingStores = [];
     missingStores.addAll(SharedPrefs.productsStores);
 
@@ -105,5 +105,6 @@ class HomeController {
     }
 
     print(storesRoute);
+    return storesRoute;
   }
 }
