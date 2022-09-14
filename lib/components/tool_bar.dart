@@ -35,9 +35,10 @@ class CustomToolBar extends StatelessWidget {
               color: SharedPrefs.greenButton,
               shape: const CircleBorder(),
               onPressed: () {
+                // ignore: avoid_print
                 print(SharedPrefs.productsStores);
                 List<int> route = controller.createRoute();
-                if (SharedPrefs.cartItems.length > 0) {
+                if (SharedPrefs.cartItems.isNotEmpty) {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -106,7 +107,7 @@ class CustomToolBar extends StatelessWidget {
                         bottom: 4,
                         right: 2,
                         child: Container(
-                          padding: EdgeInsets.all(1),
+                          padding: const EdgeInsets.all(1),
                           decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(6),
