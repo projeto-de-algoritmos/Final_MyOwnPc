@@ -34,8 +34,10 @@ class HomeController {
     List<Widget> homeList = [];
 
     for (Product product in SharedPrefs.productsList) {
-      if (!SharedPrefs.cartItems.any((element) => element.id == product.id)) {
-        homeList.add(ProductCard(product: product));
+      if (!SharedPrefs.cartItems.any((element) => (element.id == product.id))) {
+        if (!SharedPrefs.typesInCart.contains(product.type)) {
+          homeList.add(ProductCard(product: product));
+        }
       }
     }
 

@@ -69,6 +69,7 @@ class ProductCard extends StatelessWidget {
                 onPressed: () {
                   SharedPrefs.itemsCartCount.value++;
                   SharedPrefs.cartItems.add(product);
+                  SharedPrefs.typesInCart.add(product.type);
                   if (!SharedPrefs.productsStores.contains(product.idStore)) {
                     SharedPrefs.productsStores.add(product.idStore);
                   }

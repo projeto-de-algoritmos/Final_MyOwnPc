@@ -11,6 +11,7 @@ class SharedPrefs {
   static List<Product> cartItems = [];
   static List<Product> productsList = [];
   static List<int> productsStores = [];
+  static List<int> typesInCart = [];
 
   static List<Store> stores = [
     Store(0, "Correios Central", "correios.jpeg"),
