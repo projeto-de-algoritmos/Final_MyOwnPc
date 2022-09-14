@@ -72,6 +72,10 @@ class CartCard extends StatelessWidget {
                         SharedPrefs.cartItems
                             .removeWhere((element) => element.id == product.id);
                         SharedPrefs.itemsCartCount.value--;
+                        if (!SharedPrefs.cartItems.any(
+                            (element) => element.idStore == product.idStore)) {
+                          SharedPrefs.productsStores.remove(product.idStore);
+                        }
                       },
                       icon: const Icon(
                         Icons.highlight_remove_rounded,

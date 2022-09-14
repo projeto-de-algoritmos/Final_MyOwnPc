@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:my_own_pc/controller/home_controller.dart';
 import 'package:my_own_pc/shared/variables.dart';
 import 'package:my_own_pc/views/cart_sheet.dart';
 import 'package:my_own_pc/views/config_sheet.dart';
 
 class CustomToolBar extends StatelessWidget {
-  const CustomToolBar({Key? key}) : super(key: key);
+  const CustomToolBar({Key? key, required this.controller}) : super(key: key);
+
+  final HomeController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +33,10 @@ class CustomToolBar extends StatelessWidget {
               height: size.height * 0.07,
               color: SharedPrefs.greenButton,
               shape: const CircleBorder(),
-              onPressed: () {},
+              onPressed: () {
+                print(SharedPrefs.productsStores);
+                controller.createRoute();
+              },
               highlightColor: Colors.transparent,
               child: const Icon(
                 Icons.check,

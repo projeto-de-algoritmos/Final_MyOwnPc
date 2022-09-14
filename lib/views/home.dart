@@ -17,6 +17,7 @@ class _ProductsListState extends State<ProductsList> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    if (controller.grafo.grafo.isEmpty) controller.grafo.buildGraph();
     return Scaffold(
       backgroundColor: SharedPrefs.backgroundColor,
       appBar: PreferredSize(
@@ -56,9 +57,11 @@ class _ProductsListState extends State<ProductsList> {
             }),
           ),
         ),
-        const Align(
+        Align(
           alignment: Alignment.bottomCenter,
-          child: CustomToolBar(),
+          child: CustomToolBar(
+            controller: controller,
+          ),
         )
       ]),
     );

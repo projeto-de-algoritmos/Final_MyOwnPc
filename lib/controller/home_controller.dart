@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_own_pc/components/cart_equip_card.dart';
 import 'package:my_own_pc/components/equip_card.dart';
+import 'package:my_own_pc/grafo/grafo.dart';
 import 'package:my_own_pc/models/product.dart';
 import 'package:my_own_pc/shared/variables.dart';
 
 class HomeController {
+  Grafo grafo = Grafo();
+
   Future transformProductList() async {
-    List<Widget> result = [];
     var jsonText = await rootBundle.loadString('assets/product.json');
     List data = json.decode(jsonText);
     SharedPrefs.productsList = [];
@@ -80,9 +82,28 @@ class HomeController {
         )
       ];
     }
-    for (Product element in SharedPrefs.cartItems)
+    for (Product element in SharedPrefs.cartItems) {
       cartList.add(CartCard(product: element));
+    }
 
     return cartList;
+  }
+
+  void createRoute() {
+    List<int> missingStores = [];
+    missingStores.addAll(SharedPrefs.productsStores);
+
+    List<int> storesRoute = [0];
+    int actualStore = 0;
+    int nextStore = 0;
+
+    while (missingStores.isNotEmpty) {
+      int nextStore = grafo.dijkstra(actualStore, missingStores);
+      storesRoute.add(nextStore);
+      missingStores.remove(nextStore);
+      actualStore = nextStore;
+    }
+
+    print(storesRoute);
   }
 }

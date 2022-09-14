@@ -9,4 +9,5 @@ class SharedPrefs {
 
   static List<Product> cartItems = [];
   static List<Product> productsList = [];
+  static List<int> productsStores = [];
 }

@@ -4,7 +4,7 @@
         "name": "Monitor HP 23 polegadas com suporte universal",
         "priority": 3,
         "value": 169.99,
-        "store": 2,
+        "store": 7,
         "type": 0,
         "imageAsset": "assets/images/monitor_hp.jpeg",
         "quality": 4
@@ -14,7 +14,7 @@
         "name": "Mouse Gamer Redragon Cobra, Chroma RGB, 12400DPI, 7 Botões, Preto - M711 V2",
         "priority": 2,
         "value": 116.99,
-        "store": 1,
+        "store": 2,
         "type": 1,
         "imageAsset": "assets/images/mouse_cobra.jpeg",
         "quality": 4
@@ -24,7 +24,7 @@
         "name": "Teclado Mecânico Gamer Redragon Kumara, RGB, Switch Outemu Brown, PT - K552RGB-1 (PT-BROWN)",
         "priority": 2,
         "value": 209.99,
-        "store": 1,
+        "store": 8,
         "type": 2,
         "imageAsset": "assets/images/teclado_red_mec.jpeg",
         "quality": 4
@@ -34,7 +34,7 @@
         "name": "Headset Gamer JBL Quantum 800, Bluetooth, RGB, Preto",
         "priority": 2,
         "value": 1109.99,
-        "store": 1,
+        "store": 5,
         "type": 0,
         "imageAsset": "assets/images/jbl_headset.jpeg",
         "quality": 1
