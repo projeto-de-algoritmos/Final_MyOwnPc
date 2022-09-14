@@ -104,9 +104,6 @@ class HomeController {
       missingStores.remove(nextStore);
       actualStore = nextStore;
     }
-
-    // ignore: avoid_print
-    print(storesRoute);
     return storesRoute;
   }
 }

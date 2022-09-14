@@ -406,7 +406,7 @@
         "value": 28.50,
         "store": 2,
         "type": 8,
-        "imageAsset": "assets/images/mousepad_speed.jpeg",
+        "imageAsset": "assets/images/mousepad_speed.jpg",
         "quality": 5
     },
     {
@@ -436,7 +436,7 @@
         "value": 109.99,
         "store": 2,
         "type": 8,
-        "imageAsset": "assets/images/mousepad_fallen.jpg",
+        "imageAsset": "assets/images/mousepad_fallen.png",
         "quality": 2
     },
     {
