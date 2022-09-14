@@ -32,5 +32,6 @@ class ResultController {
     SharedPrefs.cartItems = [];
     SharedPrefs.itemsCartCount.value = 0;
     SharedPrefs.productsStores = [];
+    SharedPrefs.typesInCart = [];
   }
 }
