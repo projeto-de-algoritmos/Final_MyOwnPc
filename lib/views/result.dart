@@ -67,6 +67,7 @@ class _ResultPageState extends State<ResultPage> {
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: size.height * 0.02),
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
