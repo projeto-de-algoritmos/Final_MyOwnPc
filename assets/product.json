@@ -7,10 +7,50 @@
         "store": 2,
         "type": 0,
         "imageAsset": "assets/images/monitor_hp.jpeg",
-        "quality": 4
+        "quality": 5
     },
     {
         "id": 2,
+        "name": "Monitor Samsung LED 23.5 Widescreen Curvo",
+        "priority": 3,
+        "value": 881.99,
+        "store": 3,
+        "type": 0,
+        "imageAsset": "assets/images/monitor_samsung.jpg",
+        "quality": 2
+    },
+    {
+        "id": 3,
+        "name": "Monitor LED Full HD AOC 23.8",
+        "priority": 3,
+        "value": 779.00,
+        "store": 3,
+        "type": 0,
+        "imageAsset": "assets/images/monitor_aoc_23.8.jpg",
+        "quality": 3
+    },
+    {
+        "id": 4,
+        "name": "Monitor AOC 21,5",
+        "priority": 3,
+        "value": 599.00,
+        "store": 4,
+        "type": 0,
+        "imageAsset": "assets/images/monitor_aoc_21.5.jpg",
+        "quality": 4
+    },
+    {
+        "id": 5,
+        "name": "Monitor Curvo WQHD 34 Dell",
+        "priority": 3,
+        "value": 881.99,
+        "store": 5,
+        "type": 0,
+        "imageAsset": "assets/images/monitor_dell.jpg",
+        "quality": 1
+    },
+    {
+        "id": 6,
         "name": "Mouse Gamer Redragon Cobra, Chroma RGB, 12400DPI, 7 Botões, Preto - M711 V2",
         "priority": 2,
         "value": 116.99,
@@ -20,23 +60,283 @@
         "quality": 4
     },
     {
-        "id": 3,
+        "id": 7,
+        "name": "Mouse Gamer Razer Viper Mini Chroma",
+        "priority": 2,
+        "value": 134.00,
+        "store": 3,
+        "type": 1,
+        "imageAsset": "assets/images/mouse_razer.jpeg",
+        "quality": 3
+    },
+    {
+        "id": 8,
+        "name": "DELUX Mouse ergonômico",
+        "priority": 2,
+        "value": 121.15,
+        "store": 1,
+        "type": 1,
+        "imageAsset": "assets/images/mouse_delux.jpg",
+        "quality": 5
+    },
+    {
+        "id": 9,
+        "name": "Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT com Tecnologia LIGHTSPEED",
+        "priority": 2,
+        "value": 719.91,
+        "store": 5,
+        "type": 1,
+        "imageAsset": "assets/images/mouse_logitech.jpg",
+        "quality": 1
+    },
+    {
+        "id": 10,
         "name": "Teclado Mecânico Gamer Redragon Kumara, RGB, Switch Outemu Brown, PT - K552RGB-1 (PT-BROWN)",
         "priority": 2,
         "value": 209.99,
-        "store": 1,
+        "store": 3,
         "type": 2,
         "imageAsset": "assets/images/teclado_red_mec.jpeg",
         "quality": 4
     },
     {
-        "id": 4,
+        "id": 11,
+        "name": "Teclado Gamer Cooler Master MK110 RGB",
+        "priority": 2,
+        "value": 232.40,
+        "store": 4,
+        "type": 2,
+        "imageAsset": "assets/images/teclado_cooler.jpeg",
+        "quality": 3
+    },
+    {
+        "id": 12,
+        "name": "Teclado Multilaser Slim com Fio USB Teclas Silenciosas Preto - TC213",
+        "priority": 2,
+        "value": 27.90,
+        "store": 2,
+        "type": 2,
+        "imageAsset": "assets/images/teclado_multilaser.jpg",
+        "quality": 5
+    },
+    {
+        "id": 13,
+        "name": "Teclado Mecânico sem fio Logitech POP Keys",
+        "priority": 2,
+        "value": 599.90,
+        "store": 4,
+        "type": 2,
+        "imageAsset": "assets/images/teclado_logitech.jpeg",
+        "quality": 2
+    },
+    {
+        "id": 14,
+        "name": "Teclado Gamer Mecânico Alienware Low Profile RGB AW510K",
+        "priority": 2,
+        "value": 1159.99,
+        "store": 5,
+        "type": 2,
+        "imageAsset": "assets/images/teclado_alienware.jpg",
+        "quality": 1
+    },
+    {
+        "id": 15,
         "name": "Headset Gamer JBL Quantum 800, Bluetooth, RGB, Preto",
         "priority": 2,
         "value": 1109.99,
-        "store": 1,
-        "type": 0,
+        "store": 5,
+        "type": 3,
         "imageAsset": "assets/images/jbl_headset.jpeg",
         "quality": 1
+    },
+    {
+        "id": 16,
+        "name": "Headset Jabra Evolve 20 Duo Ms Usb-a - 4999-823-109",
+        "priority": 2,
+        "value": 349.90,
+        "store": 4,
+        "type": 3,
+        "imageAsset": "assets/images/headset_jabra.jpg",
+        "quality": 5
+    },
+    {
+        "id": 17,
+        "name": "Headset Gaming HyperX Cloud Alpha",
+        "priority": 2,
+        "value": 449.98,
+        "store": 1,
+        "type": 3,
+        "imageAsset": "assets/images/headset_hyperx.jpg",
+        "quality": 3
+    },
+    {
+        "id": 18,
+        "name": "Headset Gamer Redragon Zeus USB Preto RGB - H510-RGB",
+        "priority": 2,
+        "value": 320.00,
+        "store": 2,
+        "type": 3,
+        "imageAsset": "assets/images/headset_red.jpeg",
+        "quality": 4
+    },
+    {
+        "id": 19,
+        "name": "Headset Gamer Logitech G635 Rgb 7.1",
+        "priority": 2,
+        "value": 599.99,
+        "store": 3,
+        "type": 3,
+        "imageAsset": "assets/images/headset_logitech.jpeg",
+        "quality": 2
+    },
+    {
+        "id": 20,
+        "name": "Placa Mãe GA-A320M-S2H Amd Am4 Ddr4 - Gigabyte",
+        "priority": 1,
+        "value": 413.99,
+        "store": 2,
+        "type": 4,
+        "imageAsset": "assets/images/placa_ga_a320.jpg",
+        "quality": 4
+    },
+    {
+        "id": 21,
+        "name": "Placa Mãe Gigabyte GA-78LMT-USB3 - Am3+",
+        "priority": 1,
+        "value": 21.90,
+        "store": 1,
+        "type": 4,
+        "imageAsset": "assets/images/placa_ga-78.jpg",
+        "quality": 5
+    },
+    {
+        "id": 22,
+        "name": "PLACA MAE ASUS TUF GAMING X570-PLUS/BR DDR4 SOCKET AM4 CHIPSET AMD X570",
+        "priority": 1,
+        "value": 1559.99,
+        "store": 3,
+        "type": 4,
+        "imageAsset": "assets/images/placa_tuf.jpg",
+        "quality": 1
+    },
+    {
+        "id": 23,
+        "name": "Placa Mãe B450 Aorus Elite Amd Am4 Atx Ddr4 Gigabyte",
+        "priority": 1,
+        "value": 492.99,
+        "store": 4,
+        "type": 4,
+        "imageAsset": "assets/images/placa_aorus.jpg",
+        "quality": 3
+    },
+    {
+        "id": 24,
+        "name": "Placa Mãe ASUS Prime - H510M-E, Intel LGA 1200, microATX, DDR4",
+        "priority": 1,
+        "value": 699.99,
+        "store": 5,
+        "type": 4,
+        "imageAsset": "assets/images/placa_asus.jpg",
+        "quality": 2
+    },
+    {
+        "id": 25,
+        "name": "Placa de Vídeo GALAX - GeForce RTX 3070",
+        "priority": 3,
+        "value": 3999.99,
+        "store": 5,
+        "type": 1,
+        "imageAsset": "assets/images/placa_rtx_3070.jpg",
+        "quality": 1
+    },
+    {
+        "id": 26,
+        "name": "Placa De Vídeo Nvidia Geforce Gtx 1050 2gb GDDR5 Gigabyte GV-N1050G1 Gaming 2g",
+        "priority": 3,
+        "value": 629.99,
+        "store": 5,
+        "type": 4,
+        "imageAsset": "assets/images/placa_gtx_1050.jpeg",
+        "quality": 4
+    },
+    {
+        "id": 27,
+        "name": "PLACA DE VIDEO GIGABYTE GEFORCE RTX 2060 12GB GDDR6",
+        "priority": 3,
+        "value": 2799.99,
+        "store": 2,
+        "type": 5,
+        "imageAsset": "assets/images/placa_rtx_2060.jpg",
+        "quality": 2
+    },
+    {
+        "id": 28,
+        "name": "Placa De Vídeo Nvidia Geforce Gtx 1650 4gb GDDR6 GTX1650-4GD6 Snake",
+        "priority": 3,
+        "value": 1055.99,
+        "store": 3,
+        "type": 5,
+        "imageAsset": "assets/images/placa_gtx_1650.jpg",
+        "quality": 3
+    },
+    {
+        "id": 29,
+        "name": "Placa De Vídeo Nvidia Gtx 650 2gb 128gb",
+        "priority": 3,
+        "value": 600.99,
+        "store": 5,
+        "type": 5,
+        "imageAsset": "assets/images/placa_gtx_650.jpg",
+        "quality": 5
+    },
+    {
+        "id": 30,
+        "name": "MEMORIA TEAM GROUP T-FORCE VULCAN PICHAU",
+        "priority": 1,
+        "value": 229.99,
+        "store": 3,
+        "type": 6,
+        "imageAsset": "assets/images/ram_pichau.jpg",
+        "quality": 5
+    },
+    {
+        "id": 31,
+        "name": "Memória DDR4 XPG Spectrix D60",
+        "priority": 1,
+        "value": 349.99,
+        "store": 1,
+        "type": 6,
+        "imageAsset": "assets/images/ram_spectrix.jpeg",
+        "quality": 3
+    },
+    {
+        "id": 32,
+        "name": "Memória Corsair Vengeance LPX, 16GB",
+        "priority": 1,
+        "value": 445.00,
+        "store": 5,
+        "type": 6,
+        "imageAsset": "assets/images/ram_corsair.jpeg",
+        "quality": 2
+    },
+    {
+        "id": 33,
+        "name": "Memória DDR4 XPG Gammix D45, 16GB",
+        "priority": 1,
+        "value": 599.99,
+        "store": 2,
+        "type": 6,
+        "imageAsset": "assets/images/ram_gammix.jpg",
+        "quality": 1
+    },
+    {
+        "id": 34,
+        "name": "Memória RAM Kingston HyperX Fury",
+        "priority": 1,
+        "value": 215.99,
+        "store": 4,
+        "type": 6,
+        "imageAsset": "assets/images/ram_kingston.jpg",
+        "quality": 4
     }
 ]
